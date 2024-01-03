@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Starfield Simulation</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      canvas {
+        display: block;
+        background-color: #000;
+      }
+
+      .text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .text {
+        color: yellow;
+        font-size: 148px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        transform: perspective(500px) rotateX(30deg) rotateY(45deg);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <canvas id="starfield"></canvas>
+    <div class="text-container">
+      <div class="text">Starfield</div>
+    </div>
+    <script src="starfield.js"></script>
+  </body>
+
+</html>
